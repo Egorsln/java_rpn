@@ -15,7 +15,8 @@ public class ConvertToRpn {
                         break;
                 }
                 parsed_text.add(text.substring(i, j));
-                i = j;
+                i = j - 1;
+                continue;
             }
             if (text.charAt(i) != ' ') {
                 parsed_text.add(text.substring(i, i+1));
